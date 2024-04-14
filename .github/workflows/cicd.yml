@@ -17,6 +17,7 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 7.0.x
+        source-url: https://nuget.pkg.github.com/RafaelJCamara/index.json
     - name: Restore dependencies
       run: dotnet restore src/Email.Presentation
     - name: Build
