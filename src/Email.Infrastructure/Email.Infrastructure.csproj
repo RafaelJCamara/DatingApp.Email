@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Email.Application\Email.Application.csproj" />
+	<PackageReference Include="NRedisStack" Version="0.12.0" />
+	<PackageReference Include="Mailjet.Api" Version="3.0.0" />
+	<PackageReference Include="Quartz.Extensions.Hosting" Version="3.8.1" />
+  </ItemGroup>
+
+</Project>
