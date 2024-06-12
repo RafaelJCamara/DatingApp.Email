@@ -1,3 +1,4 @@
+using DatingApp.Common.Extensions;
 using Email.Application.Extensions;
 using Email.Infrastructure.Extensions;
 using Email.Presentation.Extensions;
@@ -9,7 +10,8 @@ builder.Services.AddControllers();
 builder.Services
     .AddPresentationServices(builder.Configuration)
     .AddInfrastructureServices(builder.Configuration)
-    .AddApplicationServices();
+    .AddApplicationServices()
+    .AddTelemetryExtensions("DatingApp.Email");
 
 var app = builder.Build();
 
